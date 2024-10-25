@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro con Validación</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+    <main class="presentacion__contenido">
+
+        <div class="container_secciones">
+
+            <section class="seccion_izquierda">
+
+                <div class="seccion__titulo__logo">
+                    <div class="presentacion__logo">
+                        <img class="Logo" src="./assets/Logo.png" alt="Logotipo">
+                    </div>
+
+                    <h1 class="presentacion__titulo">
+                        CREA UNA CUENTA
+                    </h1>
+
+                    <h2 class="presentacion_subtitulo">
+                        Ingresa los campos solicitados para crear una cuenta.
+                    </h2>
+                </div>
+
+                <form method="post"> <!-- Cambiado aquí -->
+
+                    <div class="container">
+
+                        <fieldset id="informacion_personal">
+                            <legend>INFORMACIÓN DE LA CUENTA</legend>
+
+                            <div class="nombre">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" placeholder="Name">
+                                <div class="error" id="nombreError"></div>
+                            </div>
+
+                            <div class="apellido">
+                                <label for="apellido">Apellido:</label>
+                                <input type="text" id="apellido" placeholder="LastName">
+                                <div class="error" id="apellidoError"></div>
+                            </div>
+
+                            <div class="email">
+                                <label for="email">Correo Electrónico:</label>
+                                <input type="email" id="email" name="email" placeholder="example@gmail.com">
+                                <div class="error" id="emailError"></div>
+                            </div>
+
+                            <div class="password">
+                                <label for="contrasena">Contraseña:</label>
+                                <input type="password" id="contrasena" name="contrasena" placeholder="********">
+                                <div class="error" id="passwordError"></div>
+                            </div>
+
+                            <div class="confirm_password">
+                                <label for="confirmar-contrasena">Confirmar Contraseña:</label>
+                                <input type="password" id="confirmar-contrasena" name="confirmar-contrasena"
+                                    placeholder="********">
+                                <div class="error" id="passwordError"></div>
+                            </div>
+
+                        </fieldset>
+                    </div>
+
+                    <div class="submit-btn">
+                        <input type="submit" value="REGISTRARSE">
+                    </div>
+                </form>
+            </section>
+
+            <section class="seccion_derecha">
+                <img src="./assets/fondo.jpg" alt="Descripción de la imagen" class="imagen_derecha">
+            </section>
+
+        </div>
+
+        <footer class="footer">
+            <p>Desarrollado por Brenda Paola Navarro Alatorre</p>
+        </footer>
+
+        <script src="js/script.js"></script>
+
+
+    </main>
+</body>
+
+</html>

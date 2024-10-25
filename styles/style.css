@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --color-primario: #0A3871;
+    --color-secundario: #343A40;
+    --color-terciario: #072B61;
+    --color-cuaternario: #F3F5FC;
+    --color-quinteario: #1f851f;
+    --color-sexteario: #87bdff36;
+    --color-septiario: Red;
+    --color-hover: #31363F;
+
+    --color-white: #FFFFFF;
+
+    --fuente-montserrat: 'Montserrat', sans-serif;
+    --fuente-krona: 'Krona One', sans-serif;
+    --fuente-inter: 'Inter', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--color-cuaternario);
+    color: var(--color-primario);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.presentacion__contenido {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    flex: 1; /* Permite que el contenedor principal ocupe el espacio restante */
+
+}
+
+.container_secciones {
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+}
+
+.seccion__titulo__logo {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 100%;
+}
+
+.presentacion__logo {
+    width: 15%;
+    height: auto;
+    margin: 3% 5%;
+    margin-bottom: 0%;
+}
+
+.Logo {
+    max-width: 50%;
+    max-height: auto;
+    width: auto;
+    height: auto;
+}
+
+.presentacion__titulo {
+    display: flex;
+    font-size: 3rem;
+    font-family: var(--fuente-krona);
+    align-self: center;
+    margin: 1%;
+}
+
+.presentacion_subtitulo {
+    font-size: 1.4rem;
+    font-family: var(--fuente-inter);
+    font-weight: 400;
+    align-self: center;
+    margin: 1%;
+    text-align: center;
+    width: 60%;
+    height: 5%;
+    color: var(--color-secundario);
+}
+
+.container {
+    min-width: 30%;
+    max-width: 600px;
+    padding: 5%;
+    justify-content: center;
+}
+
+form {
+    background-color: var(--color-white);
+    border: 2px solid none;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 70%;
+    min-width: 70%;
+    width: 70%;
+    height: 100%;
+    margin-bottom: 3%;
+    align-content: center;
+}
+
+form legend {
+    font-family: var(--fuente-krona);
+    background-color: var(--color-terciario);
+    color: var(--color-white);
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 3%;
+    padding-left: 3%;
+    display: flex;
+    text-align: center;
+    margin-right: 0%;
+}
+
+form fieldset {
+    border: 2px solid var(--color-terciario);
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 5%;
+    padding-bottom: 6%;
+    border-radius: 8px;
+    font-family: var(--fuente-inter);
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+form input {
+    font-size: 1rem;
+    font-family: var(--fuente-inter);
+    color: var(--color-secundario);
+    margin-top: 2%;
+    padding: 3%;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: var(--color-sexteario);
+    border: none;
+    justify-content: center;
+}
+
+form input {
+    max-width: max-content;
+}
+
+form input:focus {
+    border-color: var(--color-terciario);
+    outline: none;
+    box-shadow: 0 0 5px var(--color-primario);
+    text-align: center;
+}
+
+
+.password,
+.confirm_password,
+.nombre,
+.apellido,
+.email {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.password input::placeholder,
+.confirm_password input::placeholder 
+.nombre input::placeholder,
+.apellido input::placeholder,
+.email input::placeholder {
+    align-content: center;
+}
+
+.seccion_derecha {
+    display: flex;
+    align-items: center; /* Centra la imagen verticalmente */
+    justify-content: center; /* Centra la imagen horizontalmente */
+}
+
+.imagen_derecha {
+    width: 60%; /* Ocupa el 60% del ancho de la sección */
+    height: 100%; /* Ocupa el 100% de la altura de la sección */
+    object-fit: cover; /* Asegura que la imagen se ajuste sin deformarse */
+}
+
+.submit-btn {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 2%;
+}
+
+.submit-btn input {
+    padding: 2%;
+    font-family: var(--fuente-krona);
+    font-size: 1.2rem;
+    border: none;
+    background-color: var(--color-terciario);
+    color: var(--color-white);
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.submit-btn input:hover {
+    background-color: var(--color-hover);
+}
+
+.error-message {
+    color: var(--color-septiario);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.footer {
+    margin-top: auto; /* Empuja el footer al final del contenedor */
+    text-decoration: none;
+    background-color: var(--color-terciario);
+    padding: 3%;
+    color: var(--color-cuaternario);
+    text-align: center;
+    font-family: var(--fuente-krona);
+    font-size: 1.5rem;
+    width: 100%; /* Asegura que el footer ocupe todo el ancho */
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        padding: 5%;
+        gap: 2rem;
+        align-items: center;
+        /* Centra los elementos dentro del contenedor */
+    }
+
+    form {
+        width: 100%;
+        overflow: hidden;
+        align-items: center;
+        padding: 2rem;
+        max-width: 90%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    form input {
+        width: 100%;
+        /* Asegura que los inputs se ajusten completamente a una columna */
+    }
+
+    .submit-btn {
+        width: 100%;
+        /* Asegura que el checkbox y el botón ocupen todo el ancho */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        /* Añade espacio para evitar que se encimen */
+    }
+
+    .submit-btn input {
+        width: 100%;
+        /* Asegura que el botón sea responsivo */
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .footer {
+        padding: 2rem;
+        width: 100%;
+        margin: 2rem auto;
+        /* Centra el footer */
+
+    }
+}
