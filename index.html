@@ -15,25 +15,17 @@
         <div class="container_secciones">
 
             <section class="seccion_izquierda">
-
                 <div class="seccion__titulo__logo">
                     <div class="presentacion__logo">
                         <img class="Logo" src="./assets/Logo.png" alt="Logotipo">
                     </div>
 
-                    <h1 class="presentacion__titulo">
-                        CREA UNA CUENTA
-                    </h1>
-
-                    <h2 class="presentacion_subtitulo">
-                        Ingresa los campos solicitados para crear una cuenta.
-                    </h2>
+                    <h1 class="presentacion__titulo"> CREA UNA CUENTA </h1>
+                    <h2 class="presentacion_subtitulo"> Ingresa los campos solicitados para crear una cuenta. </h2>
                 </div>
 
-                <form method="post"> <!-- Cambiado aquí -->
-
+                <form method="post">
                     <div class="container">
-
                         <fieldset id="informacion_personal">
                             <legend>INFORMACIÓN DE LA CUENTA</legend>
 
@@ -67,14 +59,14 @@
                                     placeholder="********">
                                 <div class="error" id="passwordError"></div>
                             </div>
-
                         </fieldset>
                     </div>
-
-                    <div class="submit-btn">
-                        <input type="submit" value="REGISTRARSE">
-                    </div>
                 </form>
+
+                <div class="submitBtn">
+                    <button id="submitBtn">REGISTRARSE</button>
+                </div>
+
             </section>
 
             <section class="seccion_derecha">
@@ -89,8 +81,9 @@
 
         <script src="js/script.js"></script>
 
-
     </main>
+
+
 </body>
 
 </html>
